@@ -20,7 +20,7 @@
         <p>Together, We Can Make A Difference.</p>
       </div>
 
-      <NuxtLink to="" class="block text-lg text-[#65b455] underline"
+      <NuxtLink to="/" class="block text-lg text-[#65b455] underline"
         >Read More</NuxtLink
       >
     </article>
