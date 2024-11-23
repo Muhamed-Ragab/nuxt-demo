@@ -6,64 +6,64 @@
       <ul class="space-y-4">
         <li class="text-lg font-semibold">Shop</li>
         <li class="text-lg font-semibold">
-          <NuxtLink to="" class="cursor-pointer">Download App</NuxtLink>
+          <NuxtLink to="/">Download App</NuxtLink>
         </li>
       </ul>
       <ul class="space-y-4">
         <li class="text-lg font-semibold">Info</li>
         <li class="text-lg font-light">
-          <NuxtLink to="">About</NuxtLink>
+          <NuxtLink to="/">About</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Careers</NuxtLink>
+          <NuxtLink to="/">Careers</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Contact Us</NuxtLink>
+          <NuxtLink to="/">Contact Us</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Blogs</NuxtLink>
+          <NuxtLink to="/">Blogs</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Newsletter</NuxtLink>
+          <NuxtLink to="/">Newsletter</NuxtLink>
         </li>
       </ul>
       <ul class="space-y-4">
         <li class="text-lg font-semibold">Social Media</li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Youtube</NuxtLink>
+          <NuxtLink to="/">Youtube</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Instagram</NuxtLink>
+          <NuxtLink to="/">Instagram</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Facebook</NuxtLink>
+          <NuxtLink to="/">Facebook</NuxtLink>
         </li>
       </ul>
       <ul class="space-y-4">
         <li class="text-lg font-semibold">Privacy</li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Terms of Service</NuxtLink>
+          <NuxtLink to="/">Terms of Service</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Privacy Policy</NuxtLink>
+          <NuxtLink to="/">Privacy Policy</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">About Bisconnect</NuxtLink>
+          <NuxtLink to="/">About Bisconnect</NuxtLink>
         </li>
       </ul>
       <ul class="space-y-4">
         <li class="text-lg font-semibold">Help</li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Send feedback</NuxtLink>
+          <NuxtLink to="/">Send feedback</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">FAQ</NuxtLink>
+          <NuxtLink to="/">FAQ</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Support</NuxtLink>
+          <NuxtLink to="/">Support</NuxtLink>
         </li>
         <li class="text-lg font-light">
-          <NuxtLink to="">Help</NuxtLink>
+          <NuxtLink to="/">Help</NuxtLink>
         </li>
       </ul>
     </section>

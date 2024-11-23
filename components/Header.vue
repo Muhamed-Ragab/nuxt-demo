@@ -30,10 +30,10 @@
 <script lang="ts" setup>
 const links = [
   { text: "Home", to: "/" },
-  { text: "History", to: "" },
-  { text: "Calendar", to: "" },
-  { text: "Coupons", to: "" },
-  { text: "Events", to: "" },
+  { text: "History", to: "/" },
+  { text: "Calendar", to: "/" },
+  { text: "Coupons", to: "/" },
+  { text: "Events", to: "/" },
 ];
 
 const route = useRoute();
