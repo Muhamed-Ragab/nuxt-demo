@@ -1,15 +1,19 @@
 <template>
-  <footer class="bg-[#6bb154] py-8">
+  <footer class="bg-footer py-8 text-footerText">
     <section
-      class="container grid grid-cols-1 gap-8 border-b-2 border-[#aedba4] py-5 md:grid-cols-2 lg:grid-cols-5"
+      class="container grid grid-cols-1 gap-8 py-5 max-sm:border-b-2 max-sm:border-borderTwo md:grid-cols-2 lg:grid-cols-5"
     >
-      <ul class="space-y-4">
+      <ul
+        class="space-y-4 pb-5 max-sm:border-b max-sm:border-borderTwo max-sm:text-center"
+      >
         <li class="text-lg font-semibold">Shop</li>
         <li class="text-lg font-semibold">
           <NuxtLink to="/">Download App</NuxtLink>
         </li>
       </ul>
-      <ul class="space-y-4">
+      <ul
+        class="space-y-4 pb-5 max-sm:border-b max-sm:border-borderTwo max-sm:text-center"
+      >
         <li class="text-lg font-semibold">Info</li>
         <li class="text-lg font-light">
           <NuxtLink to="/">About</NuxtLink>
@@ -27,7 +31,9 @@
           <NuxtLink to="/">Newsletter</NuxtLink>
         </li>
       </ul>
-      <ul class="space-y-4">
+      <ul
+        class="space-y-4 pb-5 max-sm:border-b max-sm:border-borderTwo max-sm:text-center"
+      >
         <li class="text-lg font-semibold">Social Media</li>
         <li class="text-lg font-light">
           <NuxtLink to="/">Youtube</NuxtLink>
@@ -39,7 +45,9 @@
           <NuxtLink to="/">Facebook</NuxtLink>
         </li>
       </ul>
-      <ul class="space-y-4">
+      <ul
+        class="space-y-4 pb-5 max-sm:border-b max-sm:border-borderTwo max-sm:text-center"
+      >
         <li class="text-lg font-semibold">Privacy</li>
         <li class="text-lg font-light">
           <NuxtLink to="/">Terms of Service</NuxtLink>
@@ -51,7 +59,7 @@
           <NuxtLink to="/">About Bisconnect</NuxtLink>
         </li>
       </ul>
-      <ul class="space-y-4">
+      <ul class="space-y-4 pb-5 text-center">
         <li class="text-lg font-semibold">Help</li>
         <li class="text-lg font-light">
           <NuxtLink to="/">Send feedback</NuxtLink>
@@ -71,10 +79,15 @@
     <article
       class="container flex flex-col items-center justify-between py-4 md:flex-row"
     >
-      <h2 class="flex-1">BisConnect</h2>
+      <div class="flex-1 max-sm:hidden">
+        <Logo />
+      </div>
 
-      <form @submit.prevent="" class="flex-1 space-y-4 text-left">
-        <label for="email" class="text-lg font-bold">
+      <form
+        @submit.prevent=""
+        class="flex-1 space-y-4 py-4 text-center sm:text-left"
+      >
+        <label for="email" class="text-xl font-bold">
           Join Our Newsletter
         </label>
 
@@ -95,7 +108,7 @@
           </button>
         </div>
 
-        <p class="text-sm text-[#d5f9ce]">
+        <p class="text-[#d5f9ce] sm:text-sm">
           * Will send you weekly updates for your better tool management.
         </p>
       </form>

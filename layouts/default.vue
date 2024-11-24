@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#161719] text-white">
+  <div class="bg-Background min-h-screen text-white">
     <Header />
     <main class="min-h-screen">
       <slot />
@@ -7,8 +7,10 @@
     <Footer />
   </div>
 </template>
-
 <script lang="ts" setup>
+import Header from "~/components/layout/header";
+import Footer from "~/components/layout/footer";
+
 useSeoMeta({
   title: "BisConnect | Your Connection to a Better Future",
   description:

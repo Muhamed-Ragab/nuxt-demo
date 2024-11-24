@@ -1,0 +1,292 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("./icons.css");
+  @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+
+  @font-face {
+    font-family: "BisConnectFont";
+    src:
+      url("./BisConnectFont-v4.8/fonts/BisConnectFont.eot"),
+      url("./BisConnectFont-v4.8/fonts/BisConnectFont.woff") format("woff"),
+      url("./BisConnectFont-v4.8/fonts/BisConnectFont.ttf") format("truetype"),
+      url("./BisConnectFont-v4.8/fonts/BisConnectFont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  :root {
+    /* this has to be set to switch between light or dark */
+    color-scheme: light dark;
+    /* this has to be set to switch between Screen size */
+
+    --SafeSpace: 5rem;
+    --CompleteBar: linear-gradient(90deg, #ffd401 0%, #65b946 100%);
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 212.7 26.8% 83.9%;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --Primary: #65b946;
+      --PrimaryText: #ffffff;
+      --PrimaryHover: #51b22e;
+      --PrimaryDisabled: #8cb97b;
+      --Disabled: #eaeaea;
+      --DisabledText: #d4d4d6;
+      --Background: #f0f2f5;
+      --Text: #050505;
+      --TextTwo: #6d6f73;
+      --Nav: #ffffff;
+      --Section: #ffffff;
+      --Frame: #f7f8fa;
+      --Icon: #050505;
+      --IconBackground: #e4e6eb;
+      --IconBackgroundHover: #d8dadf;
+      --IconHover: #2c2c2c;
+      --Botton: #65b946;
+      --BottonText: #65b946;
+      --BottonHover: #51b22e;
+      --BottonTextHover: #51b22e;
+      --BottonTwo: #ffffff;
+      --BottonTwoText: #ffffff;
+      --BottonTwoHover: #ffffff;
+      --BottonTwoTextHover: #ffffff;
+      --Notefication: #e91f63;
+      --Footer: #75ba65;
+      --FooterText: #f5f5f5;
+      --Error: #f04248;
+      --Success: #00df80;
+      --Alert: #ffd21e;
+      --Border: #e7e7e7;
+      --BorderHover: #65b946;
+      --BorderTwo: #ffffff;
+      --BorderTwoHover: #ffffff;
+      --shadowBox: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+      --shadowBoxTwo: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+      --shadowBoxThree: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+      --Radio: #6d6f73;
+      --RadioOn: #65b946;
+      --RadioDisabled: #d4d4d6;
+      --RadioBack: #d4d4d6;
+      --NetStatus: #7dff4c;
+      --Shadebackground: rgb(240 242 245 / 95%);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --Primary: #65b946;
+      --PrimaryText: #ffffff;
+      --PrimaryHover: #76d950;
+      --PrimaryDisabled: #41503b;
+      --Disabled: #2f3031;
+      --DisabledText: #3e3e3f;
+      --Background: #161718;
+      --Text: #e4e6eb;
+      --TextTwo: #b0b3b8;
+      --Nav: #242526;
+      --Section: #242526;
+      --Frame: #323436;
+      --Icon: #e4e6eb;
+      --IconBackground: #3a3b3c;
+      --IconBackgroundHover: #4e4e4f;
+      --IconHover: #dddedf;
+      --Botton: #ffffff;
+      --BottonText: #ffffff;
+      --BottonHover: #76d950;
+      --BottonTextHover: #76d950;
+      --BottonTwo: #ffffff;
+      --BottonTwoText: #ffffff;
+      --BottonTwoHover: #ffffff;
+      --BottonTwoTextHover: #ffffff;
+      --Notefication: #e41e3f;
+      --Footer: #75ba65;
+      --FooterText: #f5f5f5;
+      --Error: #f04248;
+      --Success: #00df80;
+      --Alert: #ffd21e;
+      --Border: #3e3e3e;
+      --BorderHover: #65b946;
+      --BorderTwo: #ffffff;
+      --BorderTwoHover: #ffffff;
+      --shadowBox: 0px 0px 5px rgba(255, 255, 255, 0.2);
+      --shadowBoxTwo: 0px 0px 0.625rem rgba(255, 255, 255, 0.52);
+      --shadowBoxThree: 0px 0px 0.625rem rgba(255, 255, 255, 0.52);
+      --Radio: #b0b3b8;
+      --RadioOn: #65b946;
+      --RadioDisabled: #474646;
+      --RadioBack: #3e3e3f;
+      --NetStatus: #7dff4c;
+      --Shadebackground: rgb(22 23 24 / 80%);
+    }
+  }
+
+  .light {
+    /* forces light color-scheme */
+    color-scheme: light;
+    --Primary: #65b946;
+    --PrimaryText: #ffffff;
+    --PrimaryHover: #51b22e;
+    --PrimaryDisabled: #8cb97b;
+    --Disabled: #eaeaea;
+    --DisabledText: #d4d4d6;
+    --Background: #f0f2f5;
+    --Text: #050505;
+    --TextTwo: #6d6f73;
+    --Nav: #ffffff;
+    --Section: #ffffff;
+    --Frame: #f7f8fa;
+    --Icon: #050505;
+    --IconBackground: #e4e6eb;
+    --IconBackgroundHover: #d8dadf;
+    --IconHover: #2c2c2c;
+    --Botton: #65b946;
+    --BottonText: #65b946;
+    --BottonHover: #51b22e;
+    --BottonTextHover: #51b22e;
+    --BottonTwo: #ffffff;
+    --BottonTwoText: #ffffff;
+    --BottonTwoHover: #ffffff;
+    --BottonTwoTextHover: #ffffff;
+    --Notefication: #e91f63;
+    --Footer: #75ba65;
+    --FooterText: #f5f5f5;
+    --Error: #f04248;
+    --Success: #00df80;
+    --Alert: #ffd21e;
+    --Border: #e7e7e7;
+    --BorderHover: #65b946;
+    --BorderTwo: #ffffff;
+    --BorderTwoHover: #ffffff;
+    --shadowBox: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+    --shadowBoxTwo: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+    --shadowBoxThree: 0px 0px 0.25rem rgba(0, 0, 0, 0.18);
+    --Radio: #6d6f73;
+    --RadioOn: #65b946;
+    --RadioDisabled: #d4d4d6;
+    --RadioBack: #d4d4d6;
+    --NetStatus: #7dff4c;
+    --Shadebackground: rgb(240 242 245 / 95%);
+  }
+
+  .dark {
+    /* forces dark color-scheme */
+    color-scheme: dark;
+    --Primary: #65b946;
+    --PrimaryText: #ffffff;
+    --PrimaryHover: #76d950;
+    --PrimaryDisabled: #41503b;
+    --Disabled: #2f3031;
+    --DisabledText: #3e3e3f;
+    --Background: #161718;
+    --Text: #e4e6eb;
+    --TextTwo: #b0b3b8;
+    --Nav: #242526;
+    --Section: #242526;
+    --Frame: #323436;
+    --Icon: #e4e6eb;
+    --IconBackground: #3a3b3c;
+    --IconBackgroundHover: #4e4e4f;
+    --IconHover: #dddedf;
+    --Botton: #ffffff;
+    --BottonText: #ffffff;
+    --BottonHover: #76d950;
+    --BottonTextHover: #76d950;
+    --BottonTwo: #ffffff;
+    --BottonTwoText: #ffffff;
+    --BottonTwoHover: #ffffff;
+    --BottonTwoTextHover: #ffffff;
+    --Notefication: #e41e3f;
+    --Footer: #75ba65;
+    --FooterText: #f5f5f5;
+    --Error: #f04248;
+    --Success: #00df80;
+    --Alert: #ffd21e;
+    --Border: #3e3e3e;
+    --BorderHover: #65b946;
+    --BorderTwo: #ffffff;
+    --BorderTwoHover: #ffffff;
+    --shadowBox: 0px 0px 0.625rem rgba(255, 255, 255, 0.52);
+    --shadowBoxTwo: 0px 0px 0.625rem rgba(255, 255, 255, 0.52);
+    --shadowBoxThree: 0px 0px 0.625rem rgba(255, 255, 255, 0.52);
+    --Radio: #b0b3b8;
+    --RadioOn: #65b946;
+    --RadioDisabled: #474646;
+    --RadioBack: #3e3e3f;
+    --NetStatus: #7dff4c;
+    --Shadebackground: rgb(22 23 24 / 80%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply min-h-screen bg-background text-foreground;
+  }
+}
