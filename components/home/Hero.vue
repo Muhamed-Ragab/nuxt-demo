@@ -7,7 +7,7 @@
     <section class="container relative z-10 py-16 text-center">
       <article class="mt-8 space-y-8">
         <div class="text-3xl font-bold text-primary sm:text-5xl">
-          <span>Do you need a digital</span>
+          <h1>Do you need a digital</h1>
           <span
             class="bg-gradient-to-r from-[#65B946] to-[#2563EB] bg-clip-text text-3xl text-transparent sm:text-5xl"
           >
