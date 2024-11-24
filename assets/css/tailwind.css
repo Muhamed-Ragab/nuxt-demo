@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  body {
+    @apply min-h-screen bg-background text-foreground;
+  }
+
   @import url("./icons.css");
   @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
 
@@ -279,11 +283,5 @@
     --RadioBack: #3e3e3f;
     --NetStatus: #7dff4c;
     --Shadebackground: rgb(22 23 24 / 80%);
-  }
-}
-
-@layer base {
-  body {
-    @apply min-h-screen bg-background text-foreground;
   }
 }
