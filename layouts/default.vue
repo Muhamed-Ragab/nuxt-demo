@@ -1,7 +1,9 @@
 <template>
   <div class="min-h-screen bg-[#161719] text-white">
     <Header />
-    <slot />
+    <main class="min-h-screen">
+      <slot />
+    </main>
     <Footer />
   </div>
 </template>
