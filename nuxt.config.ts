@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
-    "nuxt-swiper",
   ],
 
   shadcn: {
