@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  css: ["~/assets/css/tailwind.css"],
+  css: ["~/assets/css/tailwind.css", "~/assets/css/icons.css"],
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
@@ -41,17 +41,6 @@ export default defineNuxtConfig({
   nitro: {
     future: {
       nativeSWR: true,
-    },
-  },
-
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-      cssnano:
-        process.env.NODE_ENV === "production"
-          ? { preset: ["default", { discardComments: { removeAll: true } }] }
-          : {},
     },
   },
   ssr: true,
