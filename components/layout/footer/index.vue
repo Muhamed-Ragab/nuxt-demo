@@ -80,7 +80,10 @@
       class="container flex flex-col items-center justify-between py-4 md:flex-row"
     >
       <div class="flex-1 max-sm:hidden">
-        <Logo />
+        <div class="flex select-none items-center gap-2">
+          <i class="icon icon-BisConnect text-4xl text-white"></i>
+          <span class="text-2xl font-bold">Bisconnect</span>
+        </div>
       </div>
 
       <form
