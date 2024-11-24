@@ -10,7 +10,9 @@ export default defineNuxtConfig({
     global: true,
     dirs: ["~/components"],
   },
-
+  tailwindcss: {
+    configPath: "./tailwind.config.js",
+  },
   modules: [
     "@nuxtjs/tailwindcss",
     "@formkit/auto-animate",
